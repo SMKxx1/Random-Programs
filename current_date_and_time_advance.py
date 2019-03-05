@@ -1,6 +1,8 @@
 import calendar
 
-while True:
+stop = ""
+
+while stop != 'stop':
     months = ["","january","february","march","april","may","june","july","august","september","october","november","december"]
     print("------Calendar Program in Python------\n")
     print("Enter 'x' for exit.")
@@ -16,10 +18,4 @@ while True:
         yy = int(y)
         mm = int(m)
         print("\n",calendar.month(yy,mm))
-
-import os
-def clr():
-    os.system ("CLS")
-
-input()
-clr()
+    stop = input("If you want to stop type 'stop': ")

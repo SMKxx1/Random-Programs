@@ -77,5 +77,4 @@ def main():
         if response not in ("yes", "y"):
             play_again = False
 
-if __name__ == "__main__":
-    main()
+main()
